@@ -1,0 +1,15 @@
+.topic-btn {
+  flex-grow: 1;
+  padding: 0.7rem 0.5rem;
+  border-radius: 0.6rem;
+  border: 1px solid transparent;
+
+  transition:
+    border-color 150ms ease-in-out,
+    color 150ms ease-in-out;
+}
+
+.topic-btn:hover {
+  border-color: var(--primary-clr-light);
+  color: var(--primary-clr-light);
+}

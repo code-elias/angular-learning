@@ -1,0 +1,22 @@
+ul {
+  list-style-type: none;
+  gap: 1rem;
+  padding: 0;
+  width: 25%;
+  max-width: 250px;
+  min-width: 150px;
+
+  &:hover {
+    border-color: var(--primary-clr-light);
+  }
+}
+
+li {
+  list-style: none;
+  list-style-type: none;
+}
+
+app-topic {
+  display: flex;
+  width: 100%;
+}
