@@ -1,5 +1,5 @@
-@import './styles/base.scss';
-@import './styles/flex.scss';
+@use 'styles/base.scss';
+@use 'styles/flex.scss';
 
 .test {
   background: rgba(255, 10, 10, 0.25);
