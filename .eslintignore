@@ -1,0 +1,9 @@
+# .eslintignore
+
+# Don't lint build outputs
+dist
+# Don't lint coverage outputs
+coverage
+# Don’t lint node_modules
+node_modules
+

@@ -1,0 +1,9 @@
+# .prettierignore
+
+# Don’t format build output or coverage
+dist
+coverage
+node_modules
+
+# Any other directories or files you do not want formatted
+*.min.js
