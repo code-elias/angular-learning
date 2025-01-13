@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import './styles/base.scss';
+@import './styles/flex.scss';
 
-:root {
-  /* FONT DEFAULTS */
-  --ff-default: 'Josefin Sans';
-}
-
-body {
-  font-family: var(--ff-default), Inter, sans-serif;
+.test {
+  background: rgba(255, 10, 10, 0.25);
+  border: 1px solid rgba(255, 10, 10, 0.25);
 }

@@ -1,0 +1,16 @@
+.app-header {
+  gap: 1rem;
+  justify-content: space-between;
+
+  margin: 0rem auto 2rem;
+  padding: 1rem;
+  border-radius: 0.8rem;
+
+  // background: linear-gradient(to bottom, var(--dark-clr), var(--primary-clr));
+  // border: 1px solid var(--primary-clr);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 1.2rem;
+}

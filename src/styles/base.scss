@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+  /* FONT DEFAULTS */
+  --ff-default: 'Josefin Sans';
+
+  /* COLOR */
+  --primary-clr: #4b0082;
+  --primary-clr-dark: #21004b;
+  --primary-clr-light: #824bff;
+  --secondary-clr: rgb(44, 10, 76);
+  --secondary-clr-light: rgb(71, 31, 109);
+  --secondary-clr-dark: rgb(12, 9, 16);
+  --accent-clr: #82ffff;
+  --dark-clr: #141015;
+  --light-clr: #ffffff;
+}
+
+body {
+  font-family: var(--ff-default), Inter, sans-serif;
+  color: var(--dark-clr);
+  background-color: var(--light-clr);
+}
