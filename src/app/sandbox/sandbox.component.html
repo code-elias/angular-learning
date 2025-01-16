@@ -1,1 +1,18 @@
-<p>sandbox works!</p>
+<div class="row">
+  <div class="col">
+    <h2 class="text-info">{{ greeting }}</h2>
+    <p>{{ message }}</p>
+
+    <button
+      (click)="onCompleteTask()"
+      [disabled]="anyPendingTasks"
+      class="btn btn-primary p-3 rounded-5"
+    >
+      Complete task
+    </button>
+  </div>
+
+  <div class="col">
+    <app-sb-user-signal></app-sb-user-signal>
+  </div>
+</div>

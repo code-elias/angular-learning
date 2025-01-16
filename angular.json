@@ -34,12 +34,17 @@
                 "output": "/assets/"
               },
               {
+                "glob": "**/*",
+                "input": "src/models/",
+                "output": "/models/"
+              },
+              {
                 "glob": "favicon.ico",
                 "input": "src/",
                 "output": "/"
               }
             ],
-            "styles": ["src/styles.scss"],
+            "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css", "src/styles.scss"],
             "scripts": []
           },
           "configurations": {

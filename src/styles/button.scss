@@ -14,5 +14,11 @@
   cursor: pointer;
 
   padding: 0.3rem 0.5rem;
+  border: 1px solid var(--primary-clr-light);
   border-radius: 0.3rem;
+
+  &:hover {
+    background-color: var(--primary-clr);
+    color: var(--light-clr);
+  }
 }
