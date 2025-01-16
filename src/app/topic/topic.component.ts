@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component } from '@angular/core'
+import { MOCK_TOPICS } from '../mock/topics'
 
 @Component({
   selector: 'app-topic',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './topic.component.scss'
 })
 export class TopicComponent {
-
+  topic: any = MOCK_TOPICS[4]
 }
