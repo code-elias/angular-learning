@@ -10,6 +10,7 @@ import { MOCK_USERS } from '../../mock/users'
 export class SbUserSignalComponent {
   signalUser = signal(MOCK_USERS[getRandIdx()])
   call = computed(() => `Call ${this.signalUser().name}`)
+  description = computed(() => `Active tasks: ${this.signalUser().tasks.length}`)
 
   onCall() {
     this.getRandomUser()

@@ -1,11 +1,5 @@
 <ul class="flex-column">
   <li>
-    <app-topic></app-topic>
-  </li>
-  <li>
-    <app-topic></app-topic>
-  </li>
-  <li>
-    <app-topic></app-topic>
+    <app-topic [topic]="topics[0]" (select)="onTopicSelect($event)" />
   </li>
 </ul>
