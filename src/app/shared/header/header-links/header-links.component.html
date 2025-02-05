@@ -1,15 +1,9 @@
 <nav>
   <ul class="flex">
-    <li>
-      <a routerLink="/guide" routerLinkActive="active" ariaCurrentWhenActive="page">
-        Guide to Angular
+    <li *ngFor="let route of myRoutes">
+      <a [routerLink]="route.path" routerLinkActive="active" ariaCurrentWhenActive="page">
+        {{ route.title }}
       </a>
-    </li>
-    <li>
-      <a routerLink="/sandbox">My projects</a>
-    </li>
-    <li>
-      <a routerLink="">About me</a>
     </li>
   </ul>
 </nav>
