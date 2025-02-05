@@ -1,5 +1,5 @@
 import { Component, computed, Signal, signal } from '@angular/core'
-import { MOCK_USERS } from '../../mock/users'
+import { MOCK_USERS } from '@/mock/users'
 
 @Component({
   selector: 'app-sb-user-signal',

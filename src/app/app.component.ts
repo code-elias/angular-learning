@@ -1,8 +1,8 @@
 import { Component } from '@angular/core'
 import { RouterOutlet } from '@angular/router'
-import { HeaderComponent } from './header/header/header.component'
-import { TopicListComponent } from './topic-list/topic-list.component'
-import { SandboxComponent } from './sandbox/sandbox.component'
+import { HeaderComponent } from '@shared/header/header/header.component'
+import { TopicListComponent } from '@shared/topic-list/topic-list.component'
+import { SandboxComponent } from '@views/sandbox/sandbox.component'
 
 @Component({
   selector: 'app-root',

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core'
-import { User } from '../../models/User'
+import { User } from '@/models/User'
 import { SbUserSignalComponent } from './sb-user-signal/sb-user-signal.component'
 
 @Component({
