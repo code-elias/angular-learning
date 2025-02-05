@@ -12,4 +12,8 @@ import { MyTopicSections } from '@/mock/topicSections'
 export class SectionNavComponent {
   sections = MyTopicSections
   currentSection = this.sections[0]
+
+  idPath(sectionId: string) {
+    return '/guide' + sectionId
+  }
 }
