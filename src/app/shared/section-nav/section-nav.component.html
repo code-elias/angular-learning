@@ -1,0 +1,7 @@
+<nav>
+  <ul class="row g-2">
+    <li *ngFor="let section of currentSection">
+      <a [href]="section.section">{{ section.title }}</a>
+    </li>
+  </ul>
+</nav>

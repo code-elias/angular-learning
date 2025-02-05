@@ -1,5 +1,5 @@
-<ul class="flex-column">
-  <li>
-    <app-topic [topic]="topics[0]" (select)="onTopicSelect($event)" />
+<ul class="flex-column w-100">
+  <li *ngFor="let topic of topics">
+    <app-topic [topic]="topic" (select)="onTopicSelect($event)" />
   </li>
 </ul>

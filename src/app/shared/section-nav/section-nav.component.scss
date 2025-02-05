@@ -1,0 +1,12 @@
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style: none;
+  list-style-type: none;
+
+  & a:hover {
+    color: var(--primary-clr-light);
+  }
+}
