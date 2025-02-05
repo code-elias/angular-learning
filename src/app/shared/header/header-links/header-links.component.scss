@@ -7,4 +7,10 @@ ul {
 li {
   list-style: none;
   list-style-type: none;
+  cursor: pointer;
+
+  & a {
+    color: inherit;
+    text-decoration: inherit;
+  }
 }
