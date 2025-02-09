@@ -16,3 +16,14 @@
     <app-sb-user-signal></app-sb-user-signal>
   </div>
 </div>
+
+<div class="row">
+  <h2>HttpClient</h2>
+  <button (click)="onLoadClients()" class="btn btn-primary p-3 rounded-5">Load Clients</button>
+
+  <ul>
+    <li *ngFor="let client of clients | async">
+      {{ client.name }}
+    </li>
+  </ul>
+</div>
