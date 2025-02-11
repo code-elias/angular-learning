@@ -1,0 +1,11 @@
+<h2 id="refresher-title">Refresher on tesing</h2>
+
+<button id="loadClientsBtn" (click)="onLoadClients()" class="btn btn-primary p-3 rounded-5">
+  Load Clients
+</button>
+
+<ul id="clientsList">
+  <li *ngFor="let client of clients | async">
+    {{ client.name }}
+  </li>
+</ul>

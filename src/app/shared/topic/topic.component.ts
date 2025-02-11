@@ -9,12 +9,12 @@ import { Topic } from '@/models/Topic'
   styleUrl: './topic.component.scss'
 })
 export class TopicComponent {
-  @Input({ required: true }) topic!: Topic
+  @Input({ required: true }) topic!: Topic | undefined
   // topic = input.required<Topic>() // With a read-only input signal
 
   @Output() select = new EventEmitter()
 
   onSelect() {
-    this.select.emit(this.topic.id)
+    this.select.emit(this.topic?.id)
   }
 }

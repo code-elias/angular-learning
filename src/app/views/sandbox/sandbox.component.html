@@ -17,9 +17,11 @@
   </div>
 </div>
 
+<h2>HttpClient</h2>
 <div class="row">
-  <h2>HttpClient</h2>
-  <button (click)="onLoadClients()" class="btn btn-primary p-3 rounded-5">Load Clients</button>
+  <button (click)="onLoadClients()" class="btn btn-primary p-3 rounded-5 col-3">
+    Load Clients
+  </button>
 
   <ul>
     <li *ngFor="let client of clients | async">
@@ -27,3 +29,11 @@
     </li>
   </ul>
 </div>
+
+<hr />
+<h2>Other Sandboxes</h2>
+
+<ul>
+  <li><a href="sandbox/testing">Sandbox Testing</a></li>
+  <li><a href="sandbox/todolist">Sandbox ToDo list</a></li>
+</ul>
