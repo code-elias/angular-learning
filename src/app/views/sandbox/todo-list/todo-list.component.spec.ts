@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing'
 import { TodoListComponent } from './todo-list.component'
 import { provideHttpClient } from '@angular/common/http'
 import { firstValueFrom } from 'rxjs'
+import { By } from '@angular/platform-browser'
 
 describe('TodoListComponent', () => {
   let component: TodoListComponent
@@ -29,16 +30,7 @@ describe('TodoListComponent', () => {
   })
 
   it('should load users', async () => {
-    const users = await firstValueFrom(component.users!)
+    const users = await firstValueFrom(component.users$)
     expect(users.length).toBeGreaterThan(0)
-  })
-
-  it('should create list items', async () => {
-    await firstValueFrom(component.users!)
-    fixture.detectChanges()
-    fixture.whenStable()
-
-    const listItems = fixture.nativeElement.querySelectorAll('#usersList li')
-    expect(listItems.length).toBeGreaterThan(0)
   })
 })

@@ -1,3 +1,5 @@
-<ul id="usersList">
-  <li *ngFor="let user of users | async">{{ user.firstname }} {{ user.lastname }}</li>
-</ul>
+<div class="row">
+  <app-users-list [users]="usersData" class="col-3" (select)="onSelectUser($event)" />
+
+  <app-user-tasks class="col-9" [user]="selectedUser" />
+</div>
