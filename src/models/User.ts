@@ -1,10 +1,18 @@
 export class User {
+  userId: number
   firstname: string
   lastname: string
   age: number
   tasks: Array<string>
 
-  constructor(firstname: string, lastname: string, age: number, tasks: Array<string> = []) {
+  constructor(
+    userId: number,
+    firstname: string,
+    lastname: string,
+    age: number,
+    tasks: Array<string> = []
+  ) {
+    this.userId = userId
     this.firstname = firstname
     this.lastname = lastname
     this.age = age

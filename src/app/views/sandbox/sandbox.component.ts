@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common'
   styleUrl: './sandbox.component.scss'
 })
 export class SandboxComponent {
-  user: User = new User('Alice', 'Guerrero', 28, ['Go to gym', 'Act cool', 'Go to work'])
+  user: User = new User(1, 'Alice', 'Guerrero', 28, ['Go to gym', 'Act cool', 'Go to work'])
   clients?: Observable<Client[]>
 
   constructor(private http: HttpClient) {}
