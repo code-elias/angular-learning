@@ -1,7 +1,9 @@
-<ul id="usersList">
-  <li *ngFor="let user of users" data-testId="userItem">
-    <button class="btn-reset topic-btn small-shadow w-75" (click)="onSelectUser(user.userId)">
-      {{ user.firstname }} {{ user.lastname }}
-    </button>
-  </li>
-</ul>
+<div class="scroll-container custom-scrollbar">
+  <ul id="usersList">
+    <li *ngFor="let user of users" data-testId="userItem">
+      <button class="btn-reset topic-btn small-shadow w-75" (click)="onSelectUser(user.userId)">
+        {{ user.firstname }} {{ user.lastname }}
+      </button>
+    </li>
+  </ul>
+</div>

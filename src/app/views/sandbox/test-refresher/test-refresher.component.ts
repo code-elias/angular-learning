@@ -1,3 +1,4 @@
+import { environment } from '@/environments/environment'
 import { Client } from '@/models/Client'
 import { CommonModule } from '@angular/common'
 import { HttpClient } from '@angular/common/http'
@@ -16,7 +17,7 @@ export class TestRefresherComponent {
   constructor(private http: HttpClient) {}
 
   onLoadClients() {
-    const dataUrl = '../../../mock/clients.json'
+    const dataUrl = environment.apiUrl + '/users'
     this.clients = this.http.get<Client[]>(dataUrl)
   }
 }
